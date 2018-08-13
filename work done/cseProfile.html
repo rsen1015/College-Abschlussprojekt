@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
+  <script>
+	$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+	});
+  </script>
+  
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title1 {
+  color: grey;
+  font-size: 24px;
+}
+
+button1 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  font-size: 18px;
+}
+
+a1 {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button1:hover, a1:hover {
+  opacity: 0.7;
+}
+</style>
+
+<nav class="navbar navbar-dark bg-dark">
+	<h2 class="text-white">St. Thomas' College of Engineering and Technology</h2>
+	<p span class="text-info">Intra college cricket tournament</span></p>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">CRICBASH</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	  <li class="nav-item dropdown">
+		<div class="btn-group">
+		<a href="#" class="btn btn-secondary" role="button"><i class="fa fa-home w3-xlarge"></i> HOME</a>
+		</div>
+        <div class="btn-group">
+			<button type="button" class="btn btn-secondary"><i class="fa fa-calendar w3-large"></i> FIXTURES</button>
+			<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Boy's Schedule</a>
+				<a class="dropdown-item" href="#">Girl's Schedule</a>
+			</div>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-secondary"><i class="fa fa-calendar-check-o w3-large"></i> RESULTS</button>
+			<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Boy's Results</a>
+				<a class="dropdown-item" href="#">Girl's Results</a>
+			</div>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-secondary"><i class="fa fa-group w3-large"></i> TEAMS</button>
+			<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#"><i class="fa fa-male w3-xlarge"></i>   Boys</a>
+				<a class="dropdown-item" href="#"><i class="fa fa-female w3-xlarge"></i> Girls</a>
+			</div>
+		</div>
+      </li>
+	</ul>
+	
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search Players" aria-label="Search">
+      <button class="btn btn-outline-info my-2 my-sm-0" type="submit" data-toggle="tooltip" data-placement="top" title="Search Matches"><i class="fa fa-search w3-large"></i> Search</button>
+    </form>
+  </div>
+</nav>
+</head>
+
+
+<body style="background:url(wallpaper3.jpg);background-repeat:no-repeat;background-size:100% 100%;background-attachment:fixed">
+
+
+<h1 class="text-white" style="text-align:center;"><b><i>Computer Science</i></b></h1>
+<p><h3 class="text-white" style="text-align:center;"><i>Players Profile</i></h3></p>
+
+<div class="row" style="padding-top: 20px;">
+  
+  <div class="column1" style="padding-left: 330px;">
+    
+  </div>
+  
+  <div class="column1">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><font size="5"><i>Captain</font></i></p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+
+  <div class="column1">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Aman Mishra</b></h1>
+		<p class="title1">Batsman</p>
+		<p><font size="5"><i>Vice-Captain</font></i></p>
+		<p><button1>Profile</button1></p>
+    </div>
+	
+	<div class="column1" style="padding-left: 330px;">
+    
+	</div>
+</div>
+<div>
+</div>
+
+
+<p>
+<div class="card-deck" style="padding-top: 50px;">
+  <div class="column">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+</div>
+</p>
+
+<p>
+<div class="card-deck" style="padding-top: 30px;">
+  <div class="column">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+</div>
+</p>
+
+
+<p>
+<div class="card-deck" style="padding-top: 30px;">
+  <div class="column">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="news2.jpg" alt="John" style="width:100%">
+		<h1><b>Atif J. Khan</b></h1>
+		<p class="title1">All Rounder</p>
+		<p><button1>Profile</button1></p>
+    </div>
+  </div>
+</div>
+</p>
+
+
+
+</body>
+</html>
