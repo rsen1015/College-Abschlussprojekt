@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
+
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  width: 24%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 50%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  text-align: center;
+  display: table;
+}
+
+.title {
+  color: grey;
+  text-align: center;
+}
+
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: #ffff00;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+  
+  img.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 200px;
+}
+
+</style>
+<body>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="arkadeep" style="width:100%">
+      <div class="container">
+        <h2>Arkadeep Sil</h2>
+        <p class="title">Captain</p>
+        <p><img src="allricon.jpg" height="50" width="52"></p>
+         <div id="myNav1" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+      <div class="overlay-content">
+       <b class="text-white">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
+  <div class="media">
+  <img class="sticky" src="news2.jpg" alt="arkadeep" style="width:25%">
+  <div class="media-body">
+  <h1 class="mt-0 text-white"><b> &nbsp; Arkadeep Sil</b></h1>
+  <h6 class="text-white"><b style="padding-left:1.4em;padding-right:2.2em;"> Department</b> Computer Science</h6>
+  <h6 class="text-white"><b style="padding-left:1.4em;padding-right:5.8em;"> Year</b> 4<sup>th</sup></h6>
+  <h6 class="text-white"><b style="padding-left:1.4em;padding-right:5.8em;"> Role</b> Batting Allrounder</h6>
+  <h6 class="text-white"><b style="padding-left:1.4em;padding-right:1.8em;"> Batting Style</b> Right Handed Bat</h6>
+  <h6 class="text-white"><b style="padding-left:1.4em;padding-right:1.4em;"> Bowling Style</b> Right-arm fast-medium</h6>
+  </div>
+  </div>
+  <b class="text-white">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
+<head>
+<style>
+table {
+    width:49%;
+  float:left;
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 3.5px;
+    text-align: center;
+}
+}
+table#t01 th {
+    background-color: #000000;
+    color: white;
+}
+caption { 
+    display: table-caption;
+    text-align: center;
+  color: white;
+}
+</style>
+</head>
+
+<table class="text-white">
+  <caption><h4><b>BATTING</b></h4></caption>
+  <tr>
+    <th>Matches</th>
+    <td>13</td>
+  </tr>
+  <tr>
+    <th>Innings</th>
+    <td>13</td>
+  </tr>
+  <tr>
+    <th>Runs</th>
+    <td>355</td>
+  </tr>
+  <tr>
+    <th>Balls</th>
+    <td>301</td>
+  </tr>
+  <tr>
+    <th>Highest</th>
+    <td>58</td>
+  </tr>
+  <tr>
+    <th>Average</th>
+    <td>32.27</td>
+  </tr>
+  <tr>
+    <th>Strike Rate</th>
+    <td>117.94</td>
+  </tr>
+  <tr>
+    <th>4s / 6s</th>
+    <td>38 / 12</td>
+  </tr>
+  <tr>
+    <th>50s / 100s</th>
+    <td>1 / 0</td>
+  </tr>
+</table>
+
+<table class="text-white" style="float:right;">
+  <caption><h4><b>BOWLING</b></h4></caption>
+  <tr>
+    <th>Matches</th>
+    <td>13</td>
+  </tr>
+  <tr>
+    <th>Innings</th>
+    <td>13</td>
+  </tr>
+  <tr>
+    <th>Balls</th>
+    <td>316</td>
+  </tr>
+  <tr>
+    <th>Runs</th>
+    <td>410</td>
+  </tr>
+  <tr>
+    <th>Maidens</th>
+    <td>1</td>
+  </tr>
+  <tr>
+    <th>Wickets</th>
+    <td>12</td>
+  </tr>
+  <tr>
+    <th>Average</th>
+    <td>34.17</td>
+  </tr>
+  <tr>
+    <th>Economy</th>
+    <td>7.78</td>
+  </tr>
+  <tr>
+    <th>4w / 5w</th>
+    <td>1 / 0</td>
+  </tr>
+</table>
+</div>
+  </div>
+    <button class="button" onclick="openNav1()">Profile</button>
+      </div>
+    </div>
+  <script>
+function openNav1() {
+    document.getElementById("myNav1").style.height = "100%";
+}
+function closeNav1() {
+    document.getElementById("myNav1").style.height = "0%";
+}
+</script>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="anish" style="width:100%">
+      <div class="container">
+        <h2>Anish Kumar Singh</h2>
+        <p class="title">Vice-Captain</p>
+         <div id="myNav2" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+            <div class="overlay-content">
+             <b class="text-white">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
+  <div class="media">
+  <img class="sticky" src="news2.jpg" alt="arkadeep" style="width:25%">
+  <div class="media-body">
+  <h1 class="mt-0 text-white"><b> &nbsp; Anish Kumar Singh</b></h1>
+  <h6 class="text-white"><b style="padding-left:1.4em;padding-right:2.2em;"> Department</b> Computer Science</h6>
+  <h6 class="text-white"><b style="padding-left:1.4em;padding-right:5.8em;"> Year</b> 4<sup>th</sup></h6>
+  <h6 class="text-white"><b style="padding-left:1.4em;padding-right:5.8em;"> Role</b> Batting Allrounder</h6>
+  <h6 class="text-white"><b style="padding-left:1.4em;padding-right:1.8em;"> Batting Style</b> Right Handed Bat</h6>
+  <h6 class="text-white"><b style="padding-left:1.4em;padding-right:1.4em;"> Bowling Style</b> Right-arm fast-medium</h6>
+  </div>
+  </div>
+  <b class="text-white">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b>
+<head>
+<style>
+table {
+    width:49%;
+  float:left;
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 3.5px;
+    text-align: center;
+}
+}
+table#t01 th {
+    background-color: #000000;
+    color: white;
+}
+caption { 
+    display: table-caption;
+    text-align: center;
+  color: white;
+}
+</style>
+</head>
+
+<table class="text-white">
+  <caption><h4><b>BATTING</b></h4></caption>
+  <tr>
+    <th>Matches</th>
+    <td>13</td>
+  </tr>
+  <tr>
+    <th>Innings</th>
+    <td>13</td>
+  </tr>
+  <tr>
+    <th>Runs</th>
+    <td>355</td>
+  </tr>
+  <tr>
+    <th>Balls</th>
+    <td>301</td>
+  </tr>
+  <tr>
+    <th>Highest</th>
+    <td>58</td>
+  </tr>
+  <tr>
+    <th>Average</th>
+    <td>32.27</td>
+  </tr>
+  <tr>
+    <th>Strike Rate</th>
+    <td>117.94</td>
+  </tr>
+  <tr>
+    <th>4s / 6s</th>
+    <td>38 / 12</td>
+  </tr>
+  <tr>
+    <th>50s / 100s</th>
+    <td>1 / 0</td>
+  </tr>
+</table>
+
+<table class="text-white" style="float:right;">
+  <caption><h4><b>BOWLING</b></h4></caption>
+  <tr>
+    <th>Matches</th>
+    <td>13</td>
+  </tr>
+  <tr>
+    <th>Innings</th>
+    <td>13</td>
+  </tr>
+  <tr>
+    <th>Balls</th>
+    <td>316</td>
+  </tr>
+  <tr>
+    <th>Runs</th>
+    <td>410</td>
+  </tr>
+  <tr>
+    <th>Maidens</th>
+    <td>1</td>
+  </tr>
+  <tr>
+    <th>Wickets</th>
+    <td>12</td>
+  </tr>
+  <tr>
+    <th>Average</th>
+    <td>34.17</td>
+  </tr>
+  <tr>
+    <th>Economy</th>
+    <td>7.78</td>
+  </tr>
+  <tr>
+    <th>4w / 5w</th>
+    <td>1 / 0</td>
+  </tr>
+</table>
+</div>
+  </div>
+    <button class="button" onclick="openNav2()">Profile</button>
+      </div>
+    </div>
+  <script>
+function openNav2() {
+    document.getElementById("myNav2").style.height = "100%";
+}
+function closeNav2() {
+    document.getElementById("myNav2").style.height = "0%";
+}
+</script>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="debayan" style="width:100%">
+      <div class="container">
+        <h2>Debayan Ray</h2>
+         <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+          </div>
+        </div>
+        <p><button class="button" onclick="openNav()">Profile</button>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="hhsv.jpg" alt="naveen" style="width: 100%">
+      <div class="container">
+        <h2>Naveen Jaiswal</h2>
+         <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+          </div>
+        </div>
+        <p><button class="button" onclick="openNav()">Profile</button>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="ankit" style="width:100%">
+      <div class="container">
+        <h2>Ankit Shaw</h2>
+         <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+          </div>
+        </div>
+        <p><button class="button" onclick="openNav()">Profile</button>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="hjghjd.jpg" alt="sumit" style="width: 100%">
+      <div class="container">
+        <h2>Sumit Singh</h2>
+        <p><button class="button" onclick="openNav()">Profile</button>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="hjghjd.jpg" alt="romit" style="width: 100%">
+      <div class="container">
+        <h2>Romit Dasgupta</h2>
+        <p><button class="button" onclick="openNav()">Profile</button>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="hjghjd.jpg" alt="bikash" style="width: 100%">
+      <div class="container">
+        <h2>Bikash Kumar Shaw</h2>
+        <p><button class="button" onclick="openNav()">Profile</button>
+      </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+      <img src="hjghjd.jpg" alt="bishnu" style="width: 100%">
+      <div class="container">
+        <h2>Bishnu Kumar Tibrewal</h2>
+        <p><button class="button" onclick="openNav()">Profile</button>
+        
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="hjghjd.jpg" alt="sougata" style="width: 100%">
+      <div class="container">
+        <h2>Sougata Kundu</h2>
+        <p><button class="button" onclick="openNav()">Profile</button>
+        
+      </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+      <img src="hjghjd.jpg" alt="vivek" style="width: 100%">
+      <div class="container">
+        <h2>Vivek Vimal</h2>
+        <p><button class="button" onclick="openNav()">Profile</button>
+        
+      </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+      <img src="hjghjd.jpg" alt="arghya" style="width: 100%">
+      <div class="container">
+        <h2>Arghya Kamal Sen</h2>
+        <p><button class="button" onclick="openNav()">Profile</button>
+        
+      </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+      <img src="hjghjd.jpg" alt="Swarnadeep" style="width: 100%">
+      <div class="container">
+        <h2>Swarnadeep Pal</h2>
+        <p><button class="button" onclick="openNav()">Profile</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+</body>
+</html>
+
