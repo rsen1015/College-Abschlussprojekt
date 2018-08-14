@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script>
+	$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+	});
+  </script>
+  <style>
+  
+	h1.a {
+    font-family: "Old English Text MT", Times, serif;
+	}
+
+	
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+
+
+<!--nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav-->
+
+
+
+
+ <title>Thomasites</title>
+   
+   <nav class="navbar navbar-dark" style="background: linear-gradient(to bottom,rgb(0,139,139),black)">
+	<h1 class="a"style="color:white">St. Thomas' College of Engineering & Technology</h1>
+	<p span style="font-family:Broadway, Times, serif; color: white">Thomasites Sports Academy</span></p>
+	</nav>
+   <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(to bottom,black,black)">
+  <!-- Brand -->
+  <!--<a class="navbar-brand" href="#"><h1> Thomasites Sports Academy </h1></a>-->
+  <!-- Links -->
+  <img src="icon.png" height="50" width="52">
+  <a class="navbar-brand" style="font-family:Forte, Times, serif; color:white" href="#"><i>TSAcademy</i></a>
+  
+  
+  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	  <li class="nav-item dropdown">
+		<div class="btn-group">
+		<button type="button" class="btn btn-white"><i class="fa fa-home w3-xlarge"></i> HOME</a>
+		</div>
+        <div class="btn-group">
+			<button type="button" class="btn btn-white"><i class="fa fa-futbol-o w3-large"></i> SPORTS</button>
+			<button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Cricket</a>
+				<a class="dropdown-item" href="#">Football</a>
+				<a class="dropdown-item" href="#">Badminton</a>
+				<a class="dropdown-item" href="#">Table Tennis</a>
+			</div>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-white"><i class="fa fa-flag-checkered w3-large"></i> DEPARTMENTS</button>
+			<button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">CSE</a>
+				<a class="dropdown-item" href="#">IT</a>
+				<a class="dropdown-item" href="#">EE</a>
+				<a class="dropdown-item" href="#">ECE</a>
+			</div>
+		</div>
+      </li>
+	</ul>
+	
+	
+    <form class="form-inline my-2 my-lg-0">
+      <a button class="btn btn-danger my-2 my-sm-0 text-white" data-toggle="tooltip" data-placement="top"><i class="fa fa-sign-in w3-xlarge"></i> Admin Login</button></a>
+    </form>
+  
+</nav>
+
+</head>
+<body>
+
+
+
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav" style="background: linear-gradient(to bottom,black,black,black,black,rgb(0,139,139))">
+		
+	<hr></hr>
+        <p class="text-danger" style="font-family:Modern No. 20, Times, serif"><a href="#"><i class="fa fa-user-circle-o w3-xlarge" aria-hidden="true"></i><i> Student Registration</i></a></p>
+      <hr></hr>
+	  <!--hr></hr>
+        <p class="text-danger" style="font-family:Modern No. 20, Times, serif"><a href="#"><i>Student Registration</i></a></p>
+      <hr></hr-->
+	  
+	
+    </div>
+	
+    <div class="col-sm-8 text-left text-white" style="background:url(wallpaper1.jpg)"> 
+      <h1>Welcome</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+      <h3>Test</h3>
+      <p>Lorem ipsum...</p>
+    </div>
+    <div class="col-sm-2 sidenav" style="background: linear-gradient(to bottom,black,black,black,black,rgb(0,139,139))">
+      <hr></hr>
+	  <div class="text-white">
+        <p><b><i>Notice</i></b></p>
+      </div>
+	  <hr></hr>
+        <p style="color:rgb(0,139,139)"><a href="#">Selection Process Over, Team List Realeased.</a></p>
+		<p style="color:rgb(0,139,139)"><a href="#">Schedule for Cricket Tournament Released</a></p>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center" style="background: linear-gradient(to bottom,rgb(0,139,139),black,black)">
+  <p><h4><b>Contact Us:</b></h4></p>
+</footer>
+
+</body>
+</html>
